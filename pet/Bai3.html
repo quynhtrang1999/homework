@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=divece-width, initial-scale1.0">
+        <title>pet</title>
+        <style type="text/css">
+            body{
+                background-color: #d8aa96;
+                color: #312726;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .container{
+                width: 840px;
+                height: 500px;
+                margin-top: 120px;
+                margin-right: auto;
+                margin-left: auto;
+            }
+            .information{
+			    height: 430px;
+			    width: 490px;
+			    background-color: #fAc7c2;
+			    float: right;
+			    padding-left: 40px;
+			    padding-top: 10px;
+			    text-align: left;
+			    line-height: 30px;
+		    }
+            .avatar{
+                height: 475px;
+                width: 310px;
+                background-color: #807182;
+                float: left;
+                text-align: center;
+                padding-top: 35px;
+            }
+            .part1, .dog{
+                margin-right: auto;
+                margin-left: auto;
+            }
+            .leg{
+                height: 50px;
+                width: 50px;
+            }
+            .dog{
+                height: 200px;
+                width: 200px;
+                padding-top: 100px;
+            }
+            table tr .c23{
+                width: 250px;
+            }
+            .l1{
+                cursor: pointer;
+            }
+            .text{
+                height: 35px;
+                width: 180px;
+                border: 0px;
+                border-radius: 3px;
+            }
+            input[type=radio]{
+			    visibility: hidden;
+		    }
+            input[type=radio]{
+			visibility: hidden;
+		    }
+		    .gender{
+			    width: 180px;
+			    height: 40px;
+			    background: #FFFFFF;
+			    border-radius: 3px;
+			    position: relative;
+			    line-height: 40px;
+            }
+		    .gender label{
+			    width: 82px;
+			    height: 30px;
+			    background: #FFFFFF;
+			    border-radius: 3px;
+			    position: absolute;
+			    line-height: 30px;
+			    text-align: center;
+			    top: 5px;
+			    cursor: pointer;
+		    }
+		    .label1{
+			    left: 5px;
+		    }
+		    .label2{
+			    left: 93px;
+		    }
+		    #female:checked + label{
+			    background: #F7B1AB;
+		    }
+		    #male:checked + label{
+			    background: #F7B1AB;
+		    }
+		    #spayed:checked + label{
+			    background: #F7B1AB;
+		    }
+		    #neutered:checked + label{
+			    background: #F7B1AB;
+		    }
+		    input[type=file]{
+			    width: 0px;
+		    }
+            .weight{
+			    width: 434px;
+			    height: 40px;
+			    background: #FFFFFF;
+			    border-radius: 3px;
+			    position: relative;
+			    line-height: 40px;
+		    }
+		    .weight label{
+			    top: 5px;
+			    width: 82px;
+			    height: 30px;
+			    background: #FFFFFF;
+			    border-radius: 3px;
+			    position: absolute;
+			    line-height: 30px;
+			    text-align: center;
+			    cursor: pointer;
+		    }
+		    .weight1{
+			    left: 5px;
+		    }
+		    .weight2{
+			    left: 119px;
+		    }
+		    .weight3{
+			    left: 233px;
+		    }
+		    .weight4{
+		    	left: 347px;
+		    }
+		    #choose1:checked + label{
+			    background: #F7B1AB;
+		    }
+		    #choose2:checked + label{
+		    	background: #F7B1AB;
+		    }
+		    #choose3:checked + label{
+		    	background: #F7B1AB;
+		    }
+		    #choose4:checked + label{
+		    	background: #F7B1AB;
+		    }
+            .butt{
+                background-color: #807182;
+                color: #ffffff;
+                margin-left: 245px;
+            }
+            .button{
+			    background: #ffffff;
+                width: 490px;
+                padding-left: 40px;
+			    line-height: 30px;
+			    height: 70px;
+			    line-height: 60px;
+                float: left;
+		    }
+            .button .butt{
+                background-color: #807182;
+                color: #ffffff;
+                margin-left: 250px;
+            }
+            .button .b1{
+                width: 95px;
+			    height: 35px;
+			    border-radius: 30px;
+			    border: 1px solid #807182;
+			    background: #FFFFFF;
+			    cursor: pointer;
+            }
+            input[type=submit]{
+			    width: 95px;
+			    height: 35px;
+			    border-radius: 30px;
+			    border: 1px solid #807182;
+			    background: #FFFFFF;
+			    cursor: pointer;
+		    }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="avatar">
+                <table class="part1">
+                    <tr>
+                        <td>
+                            <img src="chancho.png" class="leg">
+                        </td>
+                        <td>
+                            <h2>PUPASSURE</b></h2>
+                        </td>
+                    </tr>
+                </table>
+                <div class="dog">
+                    <img src="pet.png" class="dog"/>
+                </div>
+            </div>
+            <div class="information">
+                <h1>Yay, puppies! Ensure your<br>pup gets the best care!</h1>
+                <form>
+                    <table>
+                        <tr>
+                            <td>
+                                Name<br/>
+                                <input class="text" type="text" placeholder="Pet's breed"> 
+                            </td>
+                            <td>
+                                <input id="image" type="file">
+                                <label for="image" class="l1">
+                                    <img src="iconphoto.png" height="40px" width="40px">
+                                </label>
+                            </td>
+                            <td>Upload a photo</td>
+                        </tr>
+                        <tr>
+                            <td class="c23">
+                                Breed<br/>
+                                <input class="text" type="text" placeholder=" Pet's breed">
+                            </td>
+                            <td colspan="2">
+                                Birthday<br/>
+                                <input class="text" type="date">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Gender
+						        <div class="gender">
+							        <input type="radio" id="female" name="gender" checked>
+							        <label class="label1" for="female">Female</label>
+							        <input type="radio" id="male" name="gender">
+							        <label class="label2" for="male">Male</label>
+						        </div>
+                            </td>
+                            <td colspan="2">
+                                Spayed or Neutered<br/>
+						        <div class="gender">
+							        <input type="radio" id="spayed" name="SN" checked>
+							        <label class="label1" for="spayed">Spayed</label>
+							        <input type="radio" id="neutered" name="SN">
+							        <label class="label2" for="neutered">Neutered</label>
+						        </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Weight<br>
+						        <div class="weight">
+							        <input type="radio" id="choose1" name="weigth" checked>
+							        <label class="weight1" for="choose1">0-25 lbs</label>
+							        <input type="radio" id="choose2" name="weigth">
+							        <label class="weight2" for="choose2">25-50 lbs</label>
+							        <input type="radio" id="choose3" name="weigth">
+							        <label class="weight3" for="choose3">50-100 lbs</label>
+							        <input type="radio" id="choose4" name="weigth">
+							        <label class="weight4" for="choose4">100+ lbs</label>
+						        </div>
+                            </td>
+                        </tr>
+                    </table>
+                </form>      
+            </div>
+            <div class="button">
+                <button class="b1" type="reset" value="reset">Back</button>
+                <input class="butt" type="submit" onclick="alert('Cảm ơn bạn đã hoàn thành form!')" value="Next">
+            </div> 
+        </div>
+    </body>
+</html>

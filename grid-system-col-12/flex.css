@@ -1,0 +1,18 @@
+/** chia theo % **/
+.row {
+    width: 1000px;
+    margin: 0 auto;
+    background: blue;
+    display: flex;
+    margin-top: 10px;
+}
+.col-1 {
+    flex: 1;
+    background: red;
+    border: 1px solid white;
+}
+.col-2 {
+    flex: 1;
+    background:yellowgreen;
+    border: 2px solid black;
+}
