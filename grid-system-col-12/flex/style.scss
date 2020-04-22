@@ -1,0 +1,30 @@
+$bg-iteam: #ee5350;
+$bg-color: #fff;
+
+.row {
+    width: 700px;
+    margin : 0 auto;
+    display: flex;
+    color: $bg-color;
+    background-color: $bg-color;
+    @for $var from 1 to 13 {
+        .col-#{$var} {
+            flex: $var;
+            height: 60px;
+            line-height: 60px;
+            border-radius: 1px;
+            background-color: $bg-iteam;
+            text-align: right;
+            padding-right: 10px;
+            margin: 2px 1px;
+        }
+    }
+    @for $i from 1 to 13 {
+        .col-#{$i}:first-child {
+            margin-left: 0;
+        }
+        .col-#{$i}:last-child {
+            margin-right: 0;
+        }
+    }
+}
