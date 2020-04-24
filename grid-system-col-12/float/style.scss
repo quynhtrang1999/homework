@@ -1,0 +1,27 @@
+$bg-iteam: #ee5350;
+$bg-color: #fff;
+$lenght: 12;
+
+.row {
+    padding: 0;
+    margin: 0;
+    width: 700px;
+    margin: 3px auto;
+    color: $bg-color;
+    background-color: $bg-color ;
+    @for $i from 1 through $lenght {
+        .col-#{$i} {
+            width: ($i/$lenght)*700px - 2px;
+            margin-left: 2px;
+            height: 60px;
+            line-height: 60px;
+            float: left;
+            background: $bg-iteam;
+            text-align: right;
+            border-radius: 3px;
+        }
+    }
+    .clear-fix {
+        clear: both;
+    }
+}
